@@ -51,9 +51,9 @@ The source isn't public, so here is what you can check yourself:
 - **Check the file:** compare the SHA-256 of your `dxgi.dll` with the one listed below and in the release notes (PowerShell: `Get-FileHash dxgi.dll`). Only download it from this page.
 - You can also upload `dxgi.dll` to [VirusTotal](https://www.virustotal.com) yourself.
 
-| Version | dxgi.dll SHA-256 |
-|---|---|
-| 0.1.1 | `f0531f7e92419f93195aaefa86ffab62503ecd13513529654ba1d9d1f788fb55` |
+| Version | dxgi.dll SHA-256 | Scan |
+|---|---|---|
+| 0.1.1 | `f0531f7e92419f93195aaefa86ffab62503ecd13513529654ba1d9d1f788fb55` | [VirusTotal](https://www.virustotal.com/gui/file/f0531f7e92419f93195aaefa86ffab62503ecd13513529654ba1d9d1f788fb55) |
 
 ## Bugs and requests
 Open an [issue](../../issues). Include your ARK version, what you pressed, and `ShooterGame_dxgi.log` from `ShooterGame\Binaries\Win64` if you have it. See the [changelog](CHANGELOG.md) for what changed.
