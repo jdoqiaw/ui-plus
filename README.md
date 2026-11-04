@@ -34,6 +34,8 @@ Screenshots come from a dev build with other mods installed (S+, Ultra Stacks an
 2. Download the latest `ui-plus-x.y.z.zip` from [Releases](../../releases) and extract `dxgi.dll` and `arkfix.toml` into `<Steam library>\steamapps\common\ARK\ShooterGame\Binaries\Win64` (the folder with ShooterGame.exe and ShooterGame.pdb; the mod needs the .pdb).
 3. Start ARK without BattlEye.
 
+**Only want the mod list?** Download `ui-plus-modmenu-only-x.y.z.zip` instead. It's the same `dxgi.dll` with a settings file that turns everything off except the mod list screen; the rest of ARK's UI and controls stay vanilla. Install only one of the two packages.
+
 ## Uninstall
 Delete `dxgi.dll` and `arkfix.toml` from that folder. Nothing else is changed.
 
@@ -53,6 +55,7 @@ The source isn't public, so here is what you can check yourself:
 
 | Version | dxgi.dll SHA-256 | Scan |
 |---|---|---|
+| 0.1.2 | `d64ab5b352a808f71ef5c2470c3b4ab16d1df8c482e376f4493c2458b81185ff` | pending |
 | 0.1.1 | `f0531f7e92419f93195aaefa86ffab62503ecd13513529654ba1d9d1f788fb55` | [VirusTotal](https://www.virustotal.com/gui/file/f0531f7e92419f93195aaefa86ffab62503ecd13513529654ba1d9d1f788fb55) |
 
 ## Bugs and requests
