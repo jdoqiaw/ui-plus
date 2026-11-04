@@ -10,13 +10,28 @@ It changes no gameplay by default: crafting times, yields and AI are vanilla. Op
 
 **The only official download is this GitHub page.** Copies anywhere else are unofficial.
 
+## Screenshots
+| | |
+|---|---|
+| ![Inventory](screenshots/inventory.webp) | ![Station crafting](screenshots/station-crafting.webp) |
+| Inventory | Crafting at a station |
+| ![Hotpouch](screenshots/hotpouch.webp) | ![HUD](screenshots/hud.webp) |
+| Hotpouch wheel | HUD |
+| ![Dinos](screenshots/dinos.webp) | ![Build menu](screenshots/build-menu.webp) |
+| Dino list and stats | Build menu |
+
+![Mod list](screenshots/mod-list.webp)
+*Mod list: load order, profiles, enable/disable*
+
+Screenshots come from a dev build with other mods installed (S+, Ultra Stacks and others), so a few panels and items differ from the release.
+
 ## Requirements
 - **ARK: Survival Evolved, pre-Aquatica Steam build only** (version.txt 358.25, ShooterGame.exe dated 2025-12-08). On any other build the mod switches itself off and ARK runs vanilla.
 - **Single player, or non-BattlEye sessions only.** Launch ARK with BattlEye OFF. Never use it on official or BattlEye servers.
 
 ## Install
 1. Close ARK.
-2. Download `ui-plus-0.1.0.zip` from [Releases](../../releases) and extract `dxgi.dll` and `arkfix.toml` into `<Steam library>\steamapps\common\ARK\ShooterGame\Binaries\Win64` (the folder with ShooterGame.exe and ShooterGame.pdb; the mod needs the .pdb).
+2. Download the latest `ui-plus-x.y.z.zip` from [Releases](../../releases) and extract `dxgi.dll` and `arkfix.toml` into `<Steam library>\steamapps\common\ARK\ShooterGame\Binaries\Win64` (the folder with ShooterGame.exe and ShooterGame.pdb; the mod needs the .pdb).
 3. Start ARK without BattlEye.
 
 ## Uninstall
@@ -28,6 +43,20 @@ Delete `dxgi.dll` and `arkfix.toml` from that folder. Nothing else is changed.
 - Use at your own risk. Not affiliated with Studio Wildcard.
 - UI+ won't show up in ARK's in-game mod list: it's a DLL, not a Workshop mod.
 - Font: Rajdhani (SIL Open Font License, included).
+
+## Is it safe?
+The source isn't public, so here is what you can check yourself:
+- **What it does:** it loads with ARK, draws its own menus over the game and reads/writes ARK's in-memory UI state. It only writes its own files next to `dxgi.dll`: `arkfix.toml`, `ShooterGame_dxgi.log` and a few `arkfix_*` files (favorites, map markers).
+- **What it doesn't do:** it doesn't connect to the internet (the DLL imports no networking libraries), doesn't touch files outside the ARK folder, and doesn't change ARK's files. To uninstall, delete `dxgi.dll` and `arkfix.toml` (and any `arkfix_*` files).
+- **Check the file:** compare the SHA-256 of your `dxgi.dll` with the one listed below and in the release notes (PowerShell: `Get-FileHash dxgi.dll`). Only download it from this page.
+- You can also upload `dxgi.dll` to [VirusTotal](https://www.virustotal.com) yourself.
+
+| Version | dxgi.dll SHA-256 |
+|---|---|
+| 0.1.1 | `f0531f7e92419f93195aaefa86ffab62503ecd13513529654ba1d9d1f788fb55` |
+
+## Bugs and requests
+Open an [issue](../../issues). Include your ARK version, what you pressed, and `ShooterGame_dxgi.log` from `ShooterGame\Binaries\Win64` if you have it. See the [changelog](CHANGELOG.md) for what changed.
 
 ## License
 Free to use; all rights reserved. No re-uploading, redistributing, selling or modifying without permission. Videos and streams are fine with credit. See [LICENSE](LICENSE).
