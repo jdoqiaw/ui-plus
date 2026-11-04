@@ -4,7 +4,11 @@ A controller-first UI overhaul for **ARK: Survival Evolved** (PC, Steam).
 
 UI+ replaces ARK's inventory, crafting, station, container and map screens with gamepad-friendly ones. It adds radial wheels (Hotpouch, Command Wheel, interaction wheel), a HUD band with buffs, a dino band and toasts, and a gamepad layout built for playing on a controller. Mouse and keyboard still work in all of its screens.
 
+It also replaces ARK's mod list screen with a usable one: drag-and-drop load order, checkboxes to enable/disable mods.
+
 It changes no gameplay by default: crafting times, yields and AI are vanilla. Optional tweaks can be switched on in `arkfix.toml`.
+
+**The only official download is this GitHub page.** Copies anywhere else are unofficial.
 
 ## Requirements
 - **ARK: Survival Evolved, pre-Aquatica Steam build only** (version.txt 358.25, ShooterGame.exe dated 2025-12-08). On any other build the mod switches itself off and ARK runs vanilla.
@@ -22,4 +26,8 @@ Delete `dxgi.dll` and `arkfix.toml` from that folder. Nothing else is changed.
 - No ARK files are shipped or modified: icons, fonts and pictures are read from your own ARK install while the game runs.
 - If another tool also uses a `dxgi.dll` (ReShade, some overlays), the two will clash.
 - Use at your own risk. Not affiliated with Studio Wildcard.
+- UI+ won't show up in ARK's in-game mod list: it's a DLL, not a Workshop mod.
 - Font: Rajdhani (SIL Open Font License, included).
+
+## License
+Free to use; all rights reserved. No re-uploading, redistributing, selling or modifying without permission. Videos and streams are fine with credit. See [LICENSE](LICENSE).
